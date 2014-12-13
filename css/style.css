@@ -1,0 +1,71 @@
+body {
+  background: pink;
+  font-family: "arial"; }
+
+#mainContainer {
+  width: 750px;
+  text-allign: center;
+  margin: auto; }
+
+#events {
+  float: left;
+  color: blue; }
+  #events ul {
+    margin: 0;
+    color: green; }
+
+#mainContainer li {
+  margin: 20px; }
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+nav li {
+  display: inline-block; }
+nav a {
+  display: block;
+  padding: 6px;
+  float: left; }
+
+h1 {
+  clear: both; }
+
+h2 {
+  margin: 0; }
+
+#alert {
+  float: right; }
+
+#message, .purple, .red {
+  width: 300px;
+  length: 300px;
+  margin: auto; }
+
+.purple {
+  color: purple; }
+
+.red {
+  color: red; }
+
+button {
+  width: 100px;
+  height: 100px; }
+
+.size-1 {
+  font-size: 12pt; }
+
+.size-2 {
+  font-size: 24pt; }
+
+.size-3 {
+  font-size: 36pt; }
+
+.size-4 {
+  font-size: 48pt; }
+
+#message, .purple, .red {
+  width: 300px;
+  height: 100px;
+  border-style: solid;
+  border-width: 2px; }

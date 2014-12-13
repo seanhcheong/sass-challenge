@@ -1,0 +1,111 @@
+$ff: 'arial';
+
+$cp: pink;
+$cd: blue;
+$cg: green;
+
+$containerColor: red;
+
+$message-width: 50px;
+
+
+
+
+body {
+	background: $cp;
+	font-family: $ff;
+}
+
+#mainContainer {
+	width:750px;
+	text-allign:center;
+	margin:auto;
+}
+
+#events {
+	float:left;
+	color: $cd;
+
+	ul{
+		margin:0;
+		color:$cg;
+	}
+}
+
+#mainContainer {
+	li {
+		margin:20px;
+	}
+}
+
+nav {
+
+	ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+
+	li {
+		display: inline-block;
+	}
+
+	a {
+		display:block;
+		padding: 6px;
+		float:left;
+	}
+}
+
+h1 {
+	clear: both;
+}
+
+h2 {
+	margin: 0;
+}
+
+#alert {
+	float:right;
+}
+
+#message  {
+	width:300px;
+	length:300px;
+	margin:auto;
+}
+
+.purple {
+	@extend #message;
+	color: purple;
+	$containerColor:purple;
+}
+
+.red {
+	@extend #message;
+	color: red;
+	$containerColor:red;
+
+}
+
+button {
+	width:100px;
+	height:100px;
+}
+
+@for $i from 1 through 4 {
+	.size-#{$i} {font-size: 12pt * $i;}
+}
+
+@function size-change ($n) {
+	@return $n * $message-width;
+}
+
+
+#message {
+	width: size-change(6);
+	height: size-change(2);
+	border-style: solid;
+	border-width:2px;
+}
+
